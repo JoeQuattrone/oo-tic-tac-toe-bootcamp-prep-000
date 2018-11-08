@@ -90,8 +90,8 @@ class TicTacToe
     end
   end
 
-  def full?(board)
-    board.all? do |i|
+  def full?
+    @board.all? do |i|
       i == "X" || i == "O"
     end
   end
