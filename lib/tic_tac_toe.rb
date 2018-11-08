@@ -77,12 +77,12 @@ class TicTacToe
       win_index_3 = arrays[2]
       
       #inserts the index into the board and saves in variable to compare later
-      position_1 = board[win_index_1]
-      position_2 = board[win_index_2]
-      position_3 = board[win_index_3]
+      position_1 = @board[win_index_1]
+      position_2 = @board[win_index_2]
+      position_3 = @board[win_index_3]
       
       #compares the winning indexes of the board to see if it meets this conditional. If the indexes equal each other and the positon is taken by 'X' or 'O' it returns the array of winning indexes
-      if position_1 == position_2 && position_2 == position_3 && position_taken?(board, arrays[0])
+      if position_1 == position_2 && position_2 == position_3 && position_taken?(arrays[0])
          arrays
       else
         false
