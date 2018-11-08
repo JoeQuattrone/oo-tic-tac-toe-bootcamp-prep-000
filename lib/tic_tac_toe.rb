@@ -100,9 +100,9 @@ class TicTacToe
    full? && !won? 
   end
   
-  def over?(board)
-  full?(board) || won?(board) || draw?(board)
-end
+  def over?
+    full? || won? || draw?
+  end
 
 
 end
