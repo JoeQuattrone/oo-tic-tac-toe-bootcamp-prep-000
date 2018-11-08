@@ -95,5 +95,9 @@ class TicTacToe
       i == "X" || i == "O"
     end
   end
+  
+  def draw?
+   full? && !won? 
+  end
 
 end
