@@ -39,9 +39,9 @@ class TicTacToe
      !position_taken?(index) && index.between?(0,9)
   end
 
-  def turn_count(board) #returns number of turns that have been played
+  def turn_count #returns number of turns that have been played
     counter = 0
-    board.each do |turn|
+    @board.each do |turn|
       if  turn == "X" || turn == "O"
         counter += 1
       end
