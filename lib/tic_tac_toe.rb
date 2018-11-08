@@ -69,7 +69,7 @@ class TicTacToe
     end
   end
 
-  def won?(board)
+  def won?
     WIN_COMBINATIONS.detect do |arrays|
       #takes the index of the winning array
       win_index_1 = arrays[0]
